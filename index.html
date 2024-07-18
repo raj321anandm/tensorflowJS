@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TensorFlow.js Interactive Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="script.js" defer></script>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>TensorFlow.js Interactive Example</h1>
+    <p>Mathematical Relationship: y = 4x - 2</p>
+    <table>
+        <tr>
+            <th>x</th>
+            <th>y</th>
+        </tr>
+        <tr><td>3.1416</td><td>10.5664</td></tr>
+        <tr><td>2.8274</td><td>9.3096</td></tr>
+        <tr><td>2.5133</td><td>8.0532</td></tr>
+        <tr><td>2.1991</td><td>6.7964</td></tr>
+        <tr><td>1.8850</td><td>5.5400</td></tr>
+        <tr><td>1.5708</td><td>4.2832</td></tr>
+        <tr><td>1.2566</td><td>3.0264</td></tr>
+        <tr><td>0.9425</td><td>1.7700</td></tr>
+        <tr><td>0.6283</td><td>0.5132</td></tr>
+        <tr><td>0.3142</td><td>-0.7432</td></tr>
+    </table>
+    <h2>Prediction</h2>
+    <label for="inputX">Enter a value for x: </label>
+    <input type="number" id="inputX" step="0.01">
+    <button onclick="predict()">Predict</button>
+    <p>Prediction for input <span id="inputValue">4</span>: <span id="output"></span></p>
+</body>
+</html>
